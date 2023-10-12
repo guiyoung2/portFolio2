@@ -1,0 +1,492 @@
+@charset "utf-8";
+@font-face {
+  font-family: "omyu_pretty";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "omyu_pretty";
+}
+#header {
+  position: relative;
+  z-index: 1000;
+  text-align: center;
+  h1 {
+    text-indent: -9999px;
+    width: 360px;
+    height: 100px;
+    background: url("../image/logo1.gif") no-repeat center center;
+    background-size: contain;
+    margin-left: 40px;
+  }
+}
+.br {
+  display: block;
+}
+// 슬라이드 부분
+.slide {
+  text-align: center;
+  // .typing-txt {
+  //   display: none;
+  // }
+  .home__title {
+    font-size: 30px;
+  }
+  .op_main {
+    margin-top: 30px;
+    opacity: 0;
+    transition: all 0.8s;
+    font-size: 26px;
+  }
+  // 인트로 부분
+  .main_intro {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .about_me {
+      font-size: 24px;
+      line-height: 0px;
+      position: absolute;
+      bottom: 140px;
+      right: 50px;
+      width: 250px;
+      height: 70px;
+      background: url("../image/about_me.gif") no-repeat center center;
+      background-size: contain;
+      transition: all 0.4s;
+    }
+  }
+  // 인트로 부분 -->
+
+  // 메인 인포 부분
+  .main_info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .my_project {
+      text-indent: -9999px;
+      position: absolute;
+      bottom: 40px;
+      // right: 50px;
+      left: calc(50% - 240px);
+      transform: translateX(calc(-50%));
+      width: 250px;
+      height: 70px;
+      background: url("../image/myProject.gif") no-repeat center center;
+      background-size: contain;
+    }
+    .info_title {
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+    .info_txt {
+      font-size: 18px;
+    }
+    .myself {
+      margin-top: 20px;
+      display: flex;
+      gap: 40px;
+      .person {
+        text-align: left;
+        p {
+          height: 20px;
+          line-height: 20px;
+          margin-bottom: 7px;
+          span {
+            display: inline-block;
+            width: 50px;
+            height: 20px;
+            text-indent: -9999px;
+          }
+          .name {
+            background: url("../image/name.png") no-repeat center center;
+            background-size: contain;
+          }
+          .age {
+            background: url("../image/age.png") no-repeat center center;
+            background-size: contain;
+          }
+          .phone {
+            background: url("../image/call.png") no-repeat center center;
+            background-size: contain;
+          }
+          .email {
+            background: url("../image/email.png") no-repeat center center;
+            background-size: contain;
+          }
+        }
+      }
+      .education {
+        h3 {
+          margin-bottom: 7px;
+          .edu_img {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background: url("../image/education.png") no-repeat center center;
+            background-size: contain;
+            text-indent: -9999px;
+          }
+        }
+        p {
+          text-align: left;
+          margin-top: 8px;
+        }
+      }
+    }
+    .skill {
+      width: 100%;
+      height: auto;
+      h3 {
+        margin-bottom: 10px;
+        span {
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          background: url("../image/skill.png") no-repeat center center;
+          background-size: contain;
+          text-indent: -9999px;
+        }
+      }
+      .skill_img_wrap {
+        display: flex;
+        flex-direction: column;
+        .skill_img_t {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 20px;
+          .skill_img {
+            display: inline-block;
+            width: 15%;
+            span {
+              display: block;
+              height: 55px;
+              margin-bottom: 4px;
+            }
+            .html_img {
+              background: url("../image/html_img.png") no-repeat center center;
+              background-size: contain;
+            }
+            .css_img {
+              background: url("../image/css_img.png") no-repeat center center;
+              background-size: contain;
+            }
+            .scss_img {
+              background: url("../image/scss_img.png") no-repeat center center;
+              background-size: contain;
+            }
+            .js_img {
+              background: url("../image/js_img.png") no-repeat center center;
+              background-size: contain;
+            }
+          }
+        }
+        .skill_img_b {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .skill_img {
+            display: inline-block;
+            width: 15%;
+            span {
+              display: block;
+              height: 55px;
+              margin-bottom: 4px;
+            }
+            .jquery_img {
+              background: url("../image/jquery_img.png") no-repeat center center;
+              background-size: contain;
+            }
+            .react_img {
+              background: url("../image/react_img.png") no-repeat center center;
+              background-size: contain;
+            }
+            .figma_img {
+              background: url("../image/figma_img.png") no-repeat center center;
+              background-size: contain;
+            }
+            .vscode_img {
+              background: url("../image/vscode_img.png") no-repeat center center;
+              background-size: contain;
+            }
+          }
+        }
+      }
+    }
+  }
+  // 메인 인포 부분 -->
+}
+
+// 페이지 부분
+.content {
+  .project_logo {
+    // height: 5em;
+    text-indent: -9999px;
+    margin: 130px 0 100px;
+    height: 120px;
+    background: url("../image/project.gif") no-repeat center center;
+    background-size: contain;
+  }
+  // 프로젝트 내용 부분
+  .project_area {
+    margin-bottom: 70px;
+    h3 {
+      font-size: 30px;
+      text-align: center;
+      color: #34495e;
+      margin-bottom: 10px;
+    }
+    .project_info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      height: 350px;
+      margin: 0 5%;
+      .project_img_wrap {
+        width: 45%;
+        height: 100%;
+        .project_img {
+          display: inline-block;
+          width: 90%;
+          height: 100%;
+          position: relative;
+          .img_hover {
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            line-height: 350px;
+            opacity: 0;
+            font-size: 32px;
+            text-decoration: none;
+            color: #3c89d5;
+            transition: all 0.4s;
+          }
+          .img_hover:hover {
+            opacity: 0.5;
+          }
+        }
+        .soju_beer_img {
+          background: url("../image/soju_beer.png") no-repeat center center;
+          background-size: contain;
+        }
+        .lush_main_img {
+          background: url("../image/lush_main.png") no-repeat center center;
+          background-size: contain;
+        }
+        .portfolio1_img {
+          background: url("../image/portfolio1.png") no-repeat center center;
+          background-size: contain;
+        }
+      }
+      .project_txt {
+        width: 39%;
+        margin: 0 3%;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // align-items: center;
+        position: relative;
+        .project_about {
+          margin-bottom: 12px;
+        }
+        p {
+          text-align: left;
+          font-size: 20px;
+          color: #545b61;
+          // .w_font {
+          //   color: #3c89d5;
+          //   font-weight: bold;
+          //   font-size: 22px;
+          // }
+        }
+        .page_link {
+          text-indent: -9999px;
+          position: absolute;
+          display: block;
+          bottom: 5%;
+          left: 50%;
+          transform: translate(-50%, -5%);
+          width: 40px;
+          height: 40px;
+          background: url("../image/page.png") no-repeat center center;
+          background-size: contain;
+        }
+      }
+    }
+  }
+  // 프로젝트 내용 부분 -->
+
+  // contact 부분
+  .contact_area {
+    height: 500px;
+    .contact_logo {
+      // margin: 130px 0 70px;
+      text-indent: -9999px;
+      margin: 130px 0;
+      height: 60px;
+      background: url("../image/contact.gif") no-repeat center center;
+      background-size: contain;
+    }
+    .contact_txt {
+      margin-bottom: 20px;
+    }
+  }
+  .w_font {
+    color: #3c89d5;
+    font-weight: bold;
+    font-size: 22px;
+  }
+  // contact 부분 -->
+}
+// 페이지 부분 -->
+// 페이지 이동 버튼 관리
+.main_switch1::after {
+  content: "작업물 바로 둘러보기";
+  display: block;
+  font-size: 16px;
+  color: #fff;
+}
+.main_switch2::after {
+  content: "작업물 둘러보기";
+  display: block;
+  font-size: 16px;
+  color: #fff;
+}
+.go_main::after {
+  content: "메인으로 가기";
+  display: block;
+  font-size: 16px;
+  color: #fff;
+}
+// 페이지 이동 버튼 관리 -->
+
+@media screen and (max-width: 760px) {
+  .my_project {
+    display: none;
+  }
+}
+@media screen and (max-width: 440px) {
+  #header {
+    h1 {
+      width: 320px;
+      margin-left: 20px;
+    }
+  }
+}
+// 메인 인트로
+@media screen and (max-width: 1000px) {
+  .home__title {
+    font-size: 24px !important;
+  }
+  .op_main {
+    font-size: 20px !important;
+  }
+}
+@media screen and (max-width: 540px) {
+  .home__title {
+    font-size: 16px !important;
+  }
+  .op_main {
+    font-size: 14px !important;
+  }
+  .about_me {
+    font-size: 16px !important;
+    line-height: 140px !important;
+  }
+}
+// 메인 인포
+@media screen and (max-width: 600px) {
+  .info_title {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .info_txt {
+    font-size: 13px !important;
+    padding: 0 5%;
+  }
+  .br {
+    display: inline-block;
+  }
+  .myself {
+    flex-direction: column;
+    gap: 0px !important;
+  }
+  .person {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+  }
+  .education {
+    font-size: 14px;
+  }
+  .skill_img {
+    font-size: 14px;
+    span {
+      height: 40px !important;
+    }
+  }
+}
+
+// 페이지 부분
+@media screen and (max-width: 640px) {
+  .project_logo {
+    height: 80px !important;
+  }
+  .contact_logo {
+    height: 50px !important;
+  }
+}
+@media screen and (max-width: 560px) {
+  .contact_area {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .project_txt p {
+    font-size: 16px !important;
+  }
+  .project_txt .w_font {
+    font-size: 18px !important;
+  }
+  .page_link {
+    width: 30px !important;
+    height: 30px !important;
+    bottom: 15% !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  .project_txt p {
+    font-size: 14px !important;
+  }
+  .project_txt .w_font {
+    font-size: 16px !important;
+  }
+  .page_link {
+    bottom: 15% !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  .project_txt p {
+    font-size: 12px !important;
+  }
+  .project_txt .w_font {
+    font-size: 14px !important;
+  }
+}
