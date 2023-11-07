@@ -12,6 +12,9 @@
   padding: 0;
   font-family: "omyu_pretty";
 }
+img {
+  border: 0;
+}
 #header {
   position: relative;
   z-index: 1000;
@@ -280,6 +283,10 @@
           .img_hover:hover {
             opacity: 0.5;
           }
+        }
+        .todo_img {
+          background: url("../image/todo_main.png") no-repeat center center;
+          background-size: contain;
         }
         .soju_beer_img {
           background: url("../image/soju_beer.png") no-repeat center center;
