@@ -284,6 +284,10 @@ img {
             opacity: 0.5;
           }
         }
+        .quiz_img {
+          background: url("../image/quiz.png") no-repeat center center;
+          background-size: contain;
+        }
         .todo_img {
           background: url("../image/todo_main.png") no-repeat center center;
           background-size: contain;
