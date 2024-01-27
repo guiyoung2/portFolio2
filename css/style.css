@@ -108,16 +108,20 @@ img {
   margin-top: 20px;
   display: flex;
   gap: 40px;
+  transition: all 0.2s;
 }
 
 .slide .main_info .myself .person {
   text-align: left;
+  display: flex;
+  transition: all 0.2s;
 }
 
 .slide .main_info .myself .person p {
   height: 20px;
   line-height: 20px;
   margin-bottom: 7px;
+  transition: all 0.2s;
 }
 
 .slide .main_info .myself .person p span {
@@ -125,6 +129,7 @@ img {
   width: 50px;
   height: 20px;
   text-indent: -9999px;
+  transition: all 0.2s;
 }
 
 .slide .main_info .myself .person p .name {
@@ -147,22 +152,30 @@ img {
   background-size: contain;
 }
 
-.slide .main_info .myself .education h3 {
-  margin-bottom: 7px;
+.slide .main_info .myself .education {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 }
 
-.slide .main_info .myself .education h3 .edu_img {
+.slide .main_info .myself .education .edu_img {
   display: inline-block;
   width: 30px;
   height: 30px;
   background: url("../image/education.png") no-repeat center center;
   background-size: contain;
   text-indent: -9999px;
+  transition: all 0.2s;
+}
+
+.slide .main_info .myself .education p:nth-child(1) {
+  margin-bottom: 7px;
 }
 
 .slide .main_info .myself .education p {
   text-align: left;
-  margin-top: 8px;
+  transition: all 0.2s;
 }
 
 .slide .main_info .skill {
@@ -181,86 +194,65 @@ img {
   background: url("../image/skill.png") no-repeat center center;
   background-size: contain;
   text-indent: -9999px;
+  transition: all 0.2s;
 }
 
-.slide .main_info .skill .skill_img_wrap {
+.slide .main_info .skill .about_skill .skill_info {
+  margin-left: 10%;
+  width: 80%;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.slide .main_info .skill .skill_img_wrap .skill_img_t {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.slide .main_info .skill .about_skill .skill_info .about_html_css,
+.slide .main_info .skill .about_skill .skill_info .about_react,
+.slide .main_info .skill .about_skill .skill_info .about_jquery,
+.slide .main_info .skill .about_skill .skill_info .about_javascript {
+  width: 48%;
   margin-bottom: 20px;
+  border: 4px double #222;
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 
-.slide .main_info .skill .skill_img_wrap .skill_img_t .skill_img {
+.slide .main_info .skill .about_skill .skill_info .about_html_css h4,
+.slide .main_info .skill .about_skill .skill_info .about_react h4,
+.slide .main_info .skill .about_skill .skill_info .about_jquery h4,
+.slide .main_info .skill .about_skill .skill_info .about_javascript h4 {
+  font-size: 24px;
+  border: 2px solid #e5e5e5;
+  font-weight: bold;
+  padding: 4px;
+  border-radius: 10px;
+  transition: all 0.2s;
+  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.slide .main_info .skill .about_skill .skill_info .about_html_css h4:hover,
+.slide .main_info .skill .about_skill .skill_info .about_react h4:hover,
+.slide .main_info .skill .about_skill .skill_info .about_jquery h4:hover,
+.slide .main_info .skill .about_skill .skill_info .about_javascript h4:hover {
+  transform: scale(1.1);
+}
+
+.slide .main_info .skill .about_skill .skill_info .about_html_css p,
+.slide .main_info .skill .about_skill .skill_info .about_react p,
+.slide .main_info .skill .about_skill .skill_info .about_jquery p,
+.slide .main_info .skill .about_skill .skill_info .about_javascript p {
+  margin-bottom: 6px;
+  transition: all 0.2s;
+}
+
+.slide .main_info .skill .about_skill .skill_info .about_html_css p::before,
+.slide .main_info .skill .about_skill .skill_info .about_react p::before,
+.slide .main_info .skill .about_skill .skill_info .about_jquery p::before,
+.slide .main_info .skill .about_skill .skill_info .about_javascript p::before {
+  content: "*";
   display: inline-block;
-  width: 15%;
-}
-
-.slide .main_info .skill .skill_img_wrap .skill_img_t .skill_img span {
-  display: block;
-  height: 55px;
-  margin-bottom: 4px;
-}
-
-.slide .main_info .skill .skill_img_wrap .skill_img_t .skill_img .html_img {
-  background: url("../image/html_img.png") no-repeat center center;
-  background-size: contain;
-}
-
-.slide .main_info .skill .skill_img_wrap .skill_img_t .skill_img .css_img {
-  background: url("../image/css_img.png") no-repeat center center;
-  background-size: contain;
-}
-
-.slide .main_info .skill .skill_img_wrap .skill_img_t .skill_img .scss_img {
-  background: url("../image/scss_img.png") no-repeat center center;
-  background-size: contain;
-}
-
-.slide .main_info .skill .skill_img_wrap .skill_img_t .skill_img .js_img {
-  background: url("../image/js_img.png") no-repeat center center;
-  background-size: contain;
-}
-
-.slide .main_info .skill .skill_img_wrap .skill_img_b {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.slide .main_info .skill .skill_img_wrap .skill_img_b .skill_img {
-  display: inline-block;
-  width: 15%;
-}
-
-.slide .main_info .skill .skill_img_wrap .skill_img_b .skill_img span {
-  display: block;
-  height: 55px;
-  margin-bottom: 4px;
-}
-
-.slide .main_info .skill .skill_img_wrap .skill_img_b .skill_img .jquery_img {
-  background: url("../image/jquery_img.png") no-repeat center center;
-  background-size: contain;
-}
-
-.slide .main_info .skill .skill_img_wrap .skill_img_b .skill_img .react_img {
-  background: url("../image/react_img.png") no-repeat center center;
-  background-size: contain;
-}
-
-.slide .main_info .skill .skill_img_wrap .skill_img_b .skill_img .figma_img {
-  background: url("../image/figma_img.png") no-repeat center center;
-  background-size: contain;
-}
-
-.slide .main_info .skill .skill_img_wrap .skill_img_b .skill_img .vscode_img {
-  background: url("../image/vscode_img.png") no-repeat center center;
-  background-size: contain;
+  margin-right: 3px;
 }
 
 .content .project_logo {
@@ -287,13 +279,14 @@ img {
   justify-content: center;
   align-items: center;
   width: 90%;
-  height: 350px;
   margin: 0 5%;
+  transition: all 0.2s;
 }
 
 .content .project_area .project_info .project_img_wrap {
   width: 45%;
   height: 100%;
+  transition: all 0.2s;
 }
 
 .content .project_area .project_info .project_img_wrap .project_img {
@@ -358,10 +351,33 @@ img {
   flex-direction: column;
   justify-content: center;
   position: relative;
+  transition: all 0.2s;
 }
 
 .content .project_area .project_info .project_txt .project_about {
   margin-bottom: 12px;
+}
+
+.content .project_area .project_info .project_txt .project_about .c_f {
+  color: #e926b2;
+  font-weight: bold;
+}
+
+.content .project_area .project_info .project_txt .edu_skill {
+  margin-bottom: 7px;
+}
+
+.content .project_area .project_info .project_txt .edu_skill .c_f {
+  color: #e926b2;
+  font-weight: bold;
+}
+
+.content .project_area .project_info .project_txt .skill_info {
+  margin-bottom: 4px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .content .project_area .project_info .project_txt p {
@@ -370,13 +386,31 @@ img {
   color: #545b61;
 }
 
-.content .project_area .project_info .project_txt .page_link {
+.content .project_area .project_info .project_txt p .about_skill {
+  border: 2px solid #3c89d5;
+  padding: 2px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin: 2px;
+  transition: all 0.2s;
+}
+
+.content .project_area .project_info .project_txt p .about_skill:hover {
+  transform: scale(1.1);
+}
+
+.content .project_area .project_info .project_txt .work_p {
+  width: 100%;
+  position: relative;
+}
+
+.content .project_area .project_info .project_txt .work_p .page_link {
   text-indent: -9999px;
   position: absolute;
   display: block;
-  bottom: 5%;
+  bottom: -40px;
   left: 50%;
-  transform: translate(-50%, -5%);
+  transform: translateX(-50%);
   width: 40px;
   height: 40px;
   background: url("../image/page.png") no-repeat center center;
@@ -446,6 +480,12 @@ img {
   .op_main {
     font-size: 20px !important;
   }
+  .skill_info > div > h4 {
+    font-size: 20px !important;
+  }
+  .skill_info > div > p {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 540px) {
@@ -458,6 +498,41 @@ img {
   .about_me {
     font-size: 16px !important;
     line-height: 140px !important;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .myself p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .myself {
+    gap: 20px !important;
+  }
+  .myself p {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .myself p {
+    font-size: 11px !important;
+  }
+  .myself .person .person_t p span,
+  .myself .person .person_b p span {
+    width: 30px !important;
+  }
+  .edu_img {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .myself p {
+    font-size: 10px !important;
   }
 }
 
@@ -476,14 +551,19 @@ img {
   .myself {
     flex-direction: column;
     gap: 0px !important;
+    margin-bottom: 10px;
   }
-  .person {
+  .person_t,
+  .person_b {
     display: flex;
-    gap: 20px;
-    font-size: 14px;
   }
-  .education {
-    font-size: 14px;
+  .person_t p,
+  .person_b p {
+    font-size: 12px;
+  }
+  .skill_title {
+    width: 30px !important;
+    height: 30px !important;
   }
   .skill_img {
     font-size: 14px;
@@ -518,7 +598,6 @@ img {
   .page_link {
     width: 30px !important;
     height: 30px !important;
-    bottom: 15% !important;
   }
 }
 
@@ -529,9 +608,6 @@ img {
   .project_txt .w_font {
     font-size: 16px !important;
   }
-  .page_link {
-    bottom: 15% !important;
-  }
 }
 
 @media screen and (max-width: 450px) {
@@ -540,5 +616,65 @@ img {
   }
   .project_txt .w_font {
     font-size: 14px !important;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .content .project_area .project_info {
+    display: flex;
+    flex-direction: column;
+  }
+  .content .project_area .project_info .project_img_wrap {
+    width: 90%;
+  }
+  .content .project_area .project_info .project_txt {
+    width: 84%;
+    margin: 4% 3%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .content .project_area .project_info .project_img_wrap .project_img .img_hover {
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .content .project_area .project_info .project_img_wrap .project_img .img_hover {
+    height: 230px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .content .project_area .project_info .project_img_wrap .project_img .img_hover {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .skill_info > div > h4 {
+    font-size: 18px !important;
+  }
+  .skill_info > div > p {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .skill_info > div > h4 {
+    font-size: 15px !important;
+  }
+  .skill_info > div > p {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .skill_info > div > h4 {
+    font-size: 13px !important;
+  }
+  .skill_info > div > p {
+    font-size: 10px;
   }
 }
