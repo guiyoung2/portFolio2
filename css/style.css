@@ -328,6 +328,11 @@ img {
   background-size: contain;
 }
 
+.content .project_area .project_info .project_img_wrap .weather_calculator_img {
+  background: url("../image/weather_calculator.png") no-repeat center center;
+  background-size: contain;
+}
+
 .content .project_area .project_info .project_img_wrap .soju_beer_img {
   background: url("../image/soju_beer.png") no-repeat center center;
   background-size: contain;
