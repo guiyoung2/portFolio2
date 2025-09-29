@@ -39,13 +39,18 @@ let op_main = $(".op_main");
 const homeText = document.querySelector(".home__title");
 
 const content =
-  "안녕하세요\0식사는\0하셨나요?\0여러분들의\0귀한\0시간을\0내어\n제\0포트폴리오에\0방문해주셔서\0감사합니다\0🙏🏻";
+  "안녕하세요 식사는 하셨나요? 여러분들의 귀한 시간을 내어\n제 포트폴리오에 방문해주셔서 감사합니다 🙏🏻";
 let count = 0;
 
 var test = setInterval(typing1, 100);
 
 function typing1() {
-  homeText.innerText += content[count++];
+  if (content[count] === " ") {
+    homeText.innerHTML += "&nbsp;";
+  } else {
+    homeText.innerText += content[count];
+  }
+  count++;
   if (count == content.length) {
     // homeText.innerText = "";
     // count = 0;
